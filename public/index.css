@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.button {
+  font-size: 16pt;
+  display: inline-block;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hollow {
+  border: 2px solid #fff;
+  padding: 10px 20px;
+}
