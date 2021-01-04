@@ -2,15 +2,36 @@
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
 }
 
-.position-center {
+/* Helper Classes */
+.flex-position-center {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.flex-item {
+  height: 400px;
+  width: 30%;
+  max-width: 500px;
+  margin: 5px 10px;
+  background-color: pink;
+}
+
+@media screen and (max-width: 960px) {
+  .flex-position-center {
+    flex-direction: column;
+  }
+  .flex-item {
+    margin: 10px 0;
+    width: 90%;
+    max-width: 400px;
+  }
 }
 
 .button {

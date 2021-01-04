@@ -2,6 +2,7 @@
   background-color: #252934;
   color: #fff;
   text-align: center;
+  flex-direction: column;
 }
 
 .hero-text h2 {

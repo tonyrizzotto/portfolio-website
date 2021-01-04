@@ -4,7 +4,7 @@ import '../stylesheets/Hero.css';
 const Hero = (props) => {
   return (
     <div>
-      <div className="position-center hero-text">
+      <div className="flex-position-center hero-text">
         <h1>Hello, I'm {props.myName}.</h1>
         <h2>A creative full-stack web developer based in Boston.</h2>
         <button className="hero-btn hollow button">Learn More</button>
