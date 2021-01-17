@@ -1,4 +1,11 @@
 #project-container {
-  padding: 2rem 0;
+  padding: 3em;
   background-color: #252934;
+}
+
+@media screen and (max-width: 960px) {
+  #project-container {
+    align-items: center;
+    flex-direction: column;
+  }
 }

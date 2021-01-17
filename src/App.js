@@ -3,6 +3,8 @@ import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <NavBar />
       <AboutMe />
       <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 };
