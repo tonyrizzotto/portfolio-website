@@ -4,9 +4,9 @@ import '../stylesheets/NavBar.css';
 const NavBar = () => {
   return (
     <div id="nav-bar">
-      <li>One</li>
-      <li>two</li>
-      <li>three</li>
+      <li>About Me</li>
+      <li>Projects</li>
+      <li>Contact</li>
     </div>
   );
 };

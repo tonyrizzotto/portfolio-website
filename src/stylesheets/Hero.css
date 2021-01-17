@@ -1,6 +1,13 @@
 .hero-text {
   background-color: #252934;
-  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(/src/images/monitors.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
   text-align: center;
   flex-direction: column;
 }

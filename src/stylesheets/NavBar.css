@@ -1,6 +1,7 @@
 #nav-bar {
   overflow: hidden;
-  background-color: lightcoral;
+  color: #ffffff;
+  background-color: #1b242f;
   height: 4rem;
   display: flex;
   flex-direction: row;
