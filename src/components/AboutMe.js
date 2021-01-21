@@ -1,10 +1,11 @@
 import React from 'react';
 import '../stylesheets/About.css';
+// import TonyImg from '../images/47800412.jpg';
 
 const AboutMe = () => {
   return (
-    <div id="about" className="flex-row flex-center">
-      <div className="flex-item-half">
+    <div id="about">
+      <div id="about-text" className="">
         <h2>This is the about me component.</h2>
         <h4>Fast, Reliable and Creative</h4>
         <p>
@@ -12,9 +13,6 @@ const AboutMe = () => {
           real-world applications. Always an educator, I've been teaching young
           children the art of web programming for 2 years.
         </p>
-      </div>
-      <div className="flex flex-item-third">
-        <h2>An Image will be here</h2>
       </div>
     </div>
   );

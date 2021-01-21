@@ -3,15 +3,25 @@ import '../stylesheets/Projects.css';
 
 const Projects = () => {
   return (
-    <div className="flex-row flex-center" id="project-container">
-      <div className="flex-item-third">
+    <div id="project-container">
+      <h1>Projects</h1>
+      <div className="project">
         <h3>Project 1</h3>
       </div>
-      <div className="flex-item-third">
+      <div className="project">
         <h3>Project 2</h3>
       </div>
-      <div className="flex-item-third">
+      <div className="project">
         <h3>Project 3</h3>
+      </div>
+      <div className="project">
+        <h3>Project 4</h3>
+      </div>
+      <div className="project">
+        <h3>Project 5</h3>
+      </div>
+      <div className="project">
+        <h3>Project 6</h3>
       </div>
     </div>
   );
