@@ -55,3 +55,16 @@ body {
   transition: 0.6s;
   display: none;
 }
+
+/* Keyframe Transitions */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

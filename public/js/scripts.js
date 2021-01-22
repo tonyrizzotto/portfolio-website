@@ -2,23 +2,29 @@
 const projects = [
   (project1 = {
     name: 'fretscapes.com',
+    languages: 'HTML, CSS, Javascript',
     description: 'This is a custom build website with a sales funnel.',
     link: 'https://fretscapes.com',
+    imageUrl: './images/project1.jpg',
   }),
   (project2 = {
     name: 'Vanilla JS Todo-App',
+    languages: 'Javascript',
     description:
       'A single page application built using vanilla javascript and the local browser storage.',
     link: 'https://github.com/tonyrizzotto/vanilla-js-todo',
+    imageUrl: './images/project2.jpg',
   }),
   (project3 = {
     name: 'Dinosaur Infographic SPA',
+    languages: 'HTML, CSS, Javscript',
     description:
       'The first project of the Udacity Intermediate Javascript Nanodegree.',
     link: 'https://tonyrizzotto.com/projects/dinosaur-infographic',
   }),
   (project4 = {
     name: 'Casting Agency API',
+    languages: 'Python/Flask, Auth0, Heroku',
     description:
       "My capstone project for completion of Udacity's Full Stack Nano Degree. Graduated Dec. 2020.",
     link: 'https://infinite-wildwood-17516.herokuapp.com/',
@@ -61,12 +67,17 @@ function createProjectContainers(container, arrayOfProjects) {
   arrayOfProjects.forEach((project) => {
     let projectDiv = document.createElement('div');
     projectDiv.classList.add('project');
+    projectDiv.style.backgroundImage = `url(${project.imageUrl})`;
     // projectDiv.setAttribute('onmouseover', 'mouseHover()');
     container.appendChild(projectDiv);
 
-    let title = document.createElement('h3');
-    title.innerHTML = project.name;
+    let title = document.createElement('h2');
+    title.innerText = project.name;
     projectDiv.appendChild(title);
+
+    let languageTitle = document.createElement('h4');
+    languageTitle.innerText = project.languages;
+    projectDiv.appendChild(languageTitle);
 
     let description = document.createElement('p');
     description.innerText = project.description;
