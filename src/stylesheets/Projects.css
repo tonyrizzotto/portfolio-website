@@ -6,7 +6,7 @@
   margin-top: 200px;
 }
 #project-container > * {
-  flex: 1 1 300px;
+  flex: 1 1 350px;
 }
 #project-container h1 {
   font-size: 3rem;
@@ -16,11 +16,11 @@
 .project {
   margin: 10px;
   height: 300px;
-  width: 300px;
-  max-width: 300px;
+  width: 350px;
   background-color: green;
   z-index: 0;
   cursor: pointer;
+  z-index: 3;
 }
 .project:hover {
   transition: 0.4s ease-in;
