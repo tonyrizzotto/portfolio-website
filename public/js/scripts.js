@@ -2,22 +2,25 @@
 const projects = [
   (project1 = {
     name: 'fretscapes.com',
-    description: '',
+    description: 'This is a custom build website with a sales funnel.',
     link: 'https://fretscapes.com',
   }),
   (project2 = {
     name: 'Vanilla JS Todo-App',
-    description: '',
+    description:
+      'A single page application built using vanilla javascript and the local browser storage.',
     link: 'https://github.com/tonyrizzotto/vanilla-js-todo',
   }),
   (project3 = {
     name: 'Dinosaur Infographic SPA',
-    description: '',
+    description:
+      'The first project of the Udacity Intermediate Javascript Nanodegree.',
     link: 'https://tonyrizzotto.com/projects/dinosaur-infographic',
   }),
   (project4 = {
     name: 'Casting Agency API',
-    description: '',
+    description:
+      "My capstone project for completion of Udacity's Full Stack Nano Degree. Graduated Dec. 2020.",
     link: 'https://infinite-wildwood-17516.herokuapp.com/',
   }),
 ];
@@ -55,16 +58,27 @@ function createListeners(arrayOfItems) {
  * @param {*} arrayOfProjects
  */
 function createProjectContainers(container, arrayOfProjects) {
-  //
-
   arrayOfProjects.forEach((project) => {
-    const projectDiv = document.createElement('div');
+    let projectDiv = document.createElement('div');
     projectDiv.classList.add('project');
+    // projectDiv.setAttribute('onmouseover', 'mouseHover()');
     container.appendChild(projectDiv);
 
-    const title = document.createElement('h3');
+    let title = document.createElement('h3');
     title.innerHTML = project.name;
     projectDiv.appendChild(title);
+
+    let description = document.createElement('p');
+    description.innerText = project.description;
+    description.classList.add('hidden');
+    projectDiv.appendChild(description);
+
+    projectDiv.addEventListener('mouseover', function () {
+      description.classList.remove('hidden');
+    });
+    projectDiv.addEventListener('mouseleave', function () {
+      description.classList.add('hidden');
+    });
   });
 }
 

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 170px;
 }
 #project-container > * {
   flex: 1 1 350px;
@@ -28,8 +28,27 @@
   background-color: antiquewhite;
 }
 
+.project p {
+  color: black;
+  font-size: 20px;
+  animation: fade-in 0.4s;
+}
+
 @media screen and (max-width: 1000px) {
   #project-container {
     margin-top: 200px;
+  }
+}
+
+/* Keyframe Transitions */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
