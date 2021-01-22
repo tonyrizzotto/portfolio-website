@@ -1,4 +1,31 @@
-// function to add and remove the hidden class on click
+// Store all project information
+const projects = [
+  (project1 = {
+    name: 'fretscapes.com',
+    description: '',
+    link: 'https://fretscapes.com',
+  }),
+  (project2 = {
+    name: 'Vanilla JS Todo-App',
+    description: '',
+    link: 'https://github.com/tonyrizzotto/vanilla-js-todo',
+  }),
+  (project3 = {
+    name: 'Dinosaur Infographic SPA',
+    description: '',
+    link: 'https://tonyrizzotto.com/projects/dinosaur-infographic',
+  }),
+  (project4 = {
+    name: 'Casting Agency API',
+    description: '',
+    link: 'https://infinite-wildwood-17516.herokuapp.com/',
+  }),
+];
+
+/**
+ * @description This function will take an array of elements and add event listeners that add/remove a hidden class to show content in the DOM.
+ * @param {*} arrayOfItems
+ */
 function createListeners(arrayOfItems) {
   //set an empty array
   let contentArray = [];
@@ -19,6 +46,25 @@ function createListeners(arrayOfItems) {
         }
       });
     });
+  });
+}
+
+/**
+ * @description This function will dynamically create all project preview containers in the Projects section.
+ * @param {*} container
+ * @param {*} arrayOfProjects
+ */
+function createProjectContainers(container, arrayOfProjects) {
+  //
+
+  arrayOfProjects.forEach((project) => {
+    const projectDiv = document.createElement('div');
+    projectDiv.classList.add('project');
+    container.appendChild(projectDiv);
+
+    const title = document.createElement('h3');
+    title.innerHTML = project.name;
+    projectDiv.appendChild(title);
   });
 }
 
@@ -49,4 +95,10 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   createListeners(domItems);
+
+  // Get the Project Container
+  let projectContainer = document.getElementById('project-container');
+
+  // Call project creation function
+  createProjectContainers(projectContainer, projects);
 });

@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div id="project-container">
       <h1>Projects</h1>
-      <div className="project">
+      {/* <div className="project">
         <h3>Project 1</h3>
       </div>
       <div className="project">
@@ -22,7 +22,7 @@ const Projects = () => {
       </div>
       <div className="project">
         <h3>Project 6</h3>
-      </div>
+      </div> */}
     </div>
   );
 };

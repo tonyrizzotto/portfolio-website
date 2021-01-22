@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 200px;
+}
+#project-container > * {
+  flex: 1 1 300px;
 }
 #project-container h1 {
   font-size: 3rem;
@@ -13,8 +17,15 @@
   margin: 10px;
   height: 300px;
   width: 300px;
+  max-width: 300px;
   background-color: green;
   z-index: 0;
+  cursor: pointer;
+}
+.project:hover {
+  transition: 0.4s ease-in;
+  color: black;
+  background-color: antiquewhite;
 }
 
 @media screen and (max-width: 1000px) {
