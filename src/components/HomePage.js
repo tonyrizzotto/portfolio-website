@@ -10,7 +10,7 @@ const HomePage = (props) => {
     <div id="hero" className="hero hero-text">
       <div className="bg-box"></div>
       <div id="home">
-        <h1>Hello, I'm {props.myName}.</h1>
+        <h1>Hello, I'm {props.myName}</h1>
         <h2>A creative full-stack web developer based in Boston.</h2>
         <button id="hero-btn" className="hollow button">
           Learn More
@@ -30,13 +30,13 @@ const HomePage = (props) => {
         Tony Rizzotto
       </div>
       <div id="top-right" className="link-box top-right">
-        portfolio
+        Portfolio
       </div>
       <div id="bottom-left" className="link-box bottom-left">
-        contact
+        Contact
       </div>
       <div id="bottom-right" className="link-box bottom-right">
-        about me
+        About me
       </div>
       <Footer />
     </div>

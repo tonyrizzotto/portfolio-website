@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
 }
 body {
   background-color: #183044;
@@ -29,24 +30,25 @@ body {
   position: absolute;
   top: 0;
   left: 10px;
+  width: 125px;
 }
 
 #top-right {
   position: absolute;
   top: 0;
-  right: 10px;
+  right: 20px;
 }
 
 #bottom-left {
   position: absolute;
-  bottom: 0;
-  left: 10px;
+  bottom: 10px;
+  left: 20px;
 }
 
 #bottom-right {
   position: absolute;
-  bottom: 0;
-  right: 10px;
+  bottom: 10px;
+  right: 20px;
 }
 
 #portfolio {
@@ -59,7 +61,8 @@ body {
   display: none;
 }
 
-/* Keyframe Transitions @keyframes fade-in {
+/* Keyframe Transitions  */
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -69,4 +72,22 @@ body {
   100% {
     opacity: 1;
   }
-} */
+}
+
+@media screen and (max-width: 562px) {
+  .link-box {
+    margin-top: 10px;
+    height: 40px;
+  }
+  #top-right {
+    top: 40px;
+    right: 17px;
+  }
+  #bottom-right {
+    top: 0;
+  }
+  #bottom-left {
+    top: 40px;
+    left: 0px;
+  }
+}
