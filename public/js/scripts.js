@@ -1,13 +1,21 @@
 // Store all project information
 const projects = [
   (project1 = {
+    name: 'tonyrizzotto.com',
+    languages: 'React / Styling / OOP',
+    description:
+      'This website your at is actually a Single-Page Web Application!',
+    link: 'https://fretscapes.com',
+    imageUrl: './images/project1.jpg',
+  }),
+  (project2 = {
     name: 'fretscapes.com',
     languages: 'HTML, CSS, Javascript',
     description: 'This is a custom build website with a sales funnel.',
     link: 'https://fretscapes.com',
     imageUrl: './images/project1.jpg',
   }),
-  (project2 = {
+  (project3 = {
     name: 'Vanilla JS Todo-App',
     languages: 'Javascript',
     description:
@@ -15,14 +23,14 @@ const projects = [
     link: 'https://github.com/tonyrizzotto/vanilla-js-todo',
     imageUrl: './images/project2.jpg',
   }),
-  (project3 = {
+  (project4 = {
     name: 'Dinosaur Infographic SPA',
     languages: 'HTML, CSS, Javscript',
     description:
       'The first project of the Udacity Intermediate Javascript Nanodegree.',
     link: 'https://tonyrizzotto.com/projects/dinosaur-infographic',
   }),
-  (project4 = {
+  (project5 = {
     name: 'Casting Agency API',
     languages: 'Python/Flask, Auth0, Heroku',
     description:
